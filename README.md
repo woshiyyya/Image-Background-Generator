@@ -33,6 +33,8 @@ Fg moves from a random initial location to a plausible position
 pytorch=0.4.1  
 tensorboardX  
 tqdm   
+colorlog
+torchvision
 cv2 
 ``` 
 ## Training:
