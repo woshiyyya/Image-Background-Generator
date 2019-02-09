@@ -29,29 +29,27 @@ Fg moves from a random initial location to a plausible position
 ![resource/result2_seq.png](resource/moving_sequence2.jpg)
 
 ## Requirements
+Using conda
 ```
-pytorch=0.4.1  
+pytorch=0.4.1
+```
+
+Using pip
+```
 tensorboardX  
 tqdm   
 colorlog
 torchvision
-cv2 
+opencv-python 
 ``` 
 ## Training:
 
 ```
-python train.py --train_path=YOUR_DATA_PATH   
-                --test_path=YOUR_TEST_DATA_PATH
-                --submit_dir=./submission
-                --batch_size=20
-                --epochs=10
-                --attention
+python train.py --train_path=YOUR_DATA_PATH --test_path=YOUR_TEST_DATA_PATH --submit_dir=./submission --batch_size=20 --epochs=10 --attention
 ```
 
 ## Inference:
 
 ```
-python Inference.py --test_img=YOUR_TEST_IMAGE
-                    --top_k=5
-                    --sample_num=100
+python inference.py --test_img=resource/test1.jpg --top_k=5 --sample_num=100
 ```
