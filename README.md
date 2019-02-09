@@ -1,7 +1,7 @@
 # Auto-Retoucher(ART)--A Framework for Background Replacement and Foreground adjustment
 Given someone's photo, generates a new image with best matching background, and find the best spatial location and scale.
 
-A PyTorch implementation of ART framework. Our preprint paper has been upleaded to arXiv: http://arxiv.org/abs/1901.03954
+A PyTorch implementation of ART framework. Our preprint paper has been uploaded to arXiv: http://arxiv.org/abs/1901.03954
 
 For more information please visit our [website](https://suyang98.github.io/Auto-Retoucher/). Besides, there is a video [demo](https://v.qq.com/x/page/o082798ic8d.html).
 
