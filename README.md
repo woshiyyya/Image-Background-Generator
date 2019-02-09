@@ -30,7 +30,7 @@ Fg moves from a random initial location to a plausible position
 
 ## Requirements
 ```
-pytroch=0.4.1  
+pytorch=0.4.1  
 tensorboardX  
 tqdm   
 cv2 
