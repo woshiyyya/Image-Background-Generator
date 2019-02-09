@@ -45,7 +45,7 @@ opencv-python
 ## Training:
 
 ```
-python train.py --train_path=YOUR_DATA_PATH --test_path=YOUR_TEST_DATA_PATH --submit_dir=./submission --batch_size=20 --epochs=10 --attention
+python train.py --train_path=YOUR_DATA_PATH --test_path=YOUR_TEST_DATA_PATH --submit_dir=./submission --batch_size=20 --epochs=10 --Attention
 ```
 
 ## Inference:
