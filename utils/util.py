@@ -97,10 +97,10 @@ def colorEncode(labelmap, colors, mode='BGR'):
         return labelmap_rgb
 
 
-def load_data(small=False):
-    source_path = os.path.join(expanduser("~"), "cvdata", "data_jpg")
-    shuffle_path = os.path.join(expanduser("~"), "cvdata", "sigmoid_shuffle")
-    scene_path = os.path.join(expanduser("~"), "cvdata", "scene_parsing_np")
+def load_data(config):
+    source_path = os.path.join(config['train_path'], "data_jpg")
+    shuffle_path = os.path.join(config['train_path'], "sigmoid_shuffle")
+    scene_path = os.path.join(config['train_path'], "scene_parsing_np")
     folder_names = ['golf', 'kitchen', 'office', 'airport_terminal', 'banquet',
                     'beach', 'boat', 'coffee_shop', 'conference_room', 'desert',
                     'football', 'hospital', 'ice_skating', 'stage', 'staircase',
@@ -109,7 +109,7 @@ def load_data(small=False):
                     'beach', 'boat', 'coffee_shop', 'conference_room', 'desert',
                     'hospital', 'ice_skating', 'staircase',
                     'supermarket']
-    if small:
+    if config['debug']:
         folder_names = ['desert']
     bg_data = dict()
     fg_data = dict()

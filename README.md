@@ -1,7 +1,7 @@
 # Auto-Retoucher(ART)--A Framework for Background Replacement and Foreground adjustment
 Given someone's photo, generates a new image with best matching background, and find the best spatial location and scale.
 
-A PyTorch implementation of ART framework. Our preprint paper has been upleaded to arXiv: http://arxiv.org/abs/1901.03954
+A PyTorch implementation of ART framework. Our preprint paper has been uploaded to arXiv: http://arxiv.org/abs/1901.03954
 
 For more information please visit our [website](https://suyang98.github.io/Auto-Retoucher/). Besides, there is a video [demo](https://v.qq.com/x/page/o082798ic8d.html).
 
@@ -29,27 +29,27 @@ Fg moves from a random initial location to a plausible position
 ![resource/result2_seq.png](resource/moving_sequence2.jpg)
 
 ## Requirements
+Using conda
 ```
-pytroch=0.4.1  
+pytorch=0.4.1
+```
+
+Using pip
+```
 tensorboardX  
 tqdm   
-cv2 
+colorlog
+torchvision
+opencv-python 
 ``` 
 ## Training:
 
 ```
-python train.py --train_path=YOUR_DATA_PATH   
-                --test_path=YOUR_TEST_DATA_PATH
-                --submit_dir=./submission
-                --batch_size=20
-                --epochs=10
-                --attention
+python train.py --train_path=YOUR_DATA_PATH --test_path=YOUR_TEST_DATA_PATH --submit_dir=./submission --batch_size=20 --epochs=10 --Attention
 ```
 
 ## Inference:
 
 ```
-python Inference.py --test_img=YOUR_TEST_IMAGE
-                    --top_k=5
-                    --sample_num=100
+python inference.py --test_img=resource/test1.jpg --top_k=5 --sample_num=100
 ```
